@@ -5,9 +5,7 @@ const outputAbsolute = document.querySelector("#output-absolute");
 const outputPercentage = document.querySelector("#output-percentage");
 const submitButton = document.querySelector("#submit");
 
-const check = (bPrice, pPrice) => {
-  return pPrice - bPrice;
-}
+const check = (bPrice, pPrice) => pPrice - bPrice;
 
 const submitHandler = () => {
   const bPrice = Number(buyingPrice.value);
