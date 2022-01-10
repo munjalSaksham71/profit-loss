@@ -5,11 +5,11 @@ const outputAbsolute = document.querySelector("#output-absolute");
 const outputPercentage = document.querySelector("#output-percentage");
 const submitButton = document.querySelector("#submit");
 
-function check(bPrice, pPrice) {
+const check = (bPrice, pPrice) => {
   return pPrice - bPrice;
 }
 
-function submitHandler() {
+const submitHandler = () => {
   const bPrice = Number(buyingPrice.value);
   const pPrice = Number(presentPrice.value);
   const quan = Number(quantity.value);
